@@ -1,0 +1,13 @@
+<div class="header">
+  <div>
+    <h3>
+      {{ (email$ | async).subject }}
+    </h3>
+    <div>
+      From: <i>{{ (email$ | async).from }}</i>
+    </div>
+    <div>
+      To: <i>{{(email$ | async).to}}</i>
+    </div>
+  </div>
+</div>
