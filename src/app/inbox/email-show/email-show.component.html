@@ -10,6 +10,9 @@
       To: <i>{{(email$ | async).to}}</i>
     </div>
   </div>
+  <div>
+    <app-email-reply [email]="email$ | async"></app-email-reply>
+  </div>
 </div>
 <div class="ui divider"></div>
 <div [innerHTML]="(email$ | async).html"></div>
